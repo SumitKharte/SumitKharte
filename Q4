@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Lists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            text-decoration: underline;
+        }
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML List: Ordered, Unordered & Definition List</h2>
+    <hr>
+    <p>Following is the list of proposed student activities like:</p>
+    <ol>
+        <li>Develop programs related with unit vice topics in computer laboratory.</li>
+        <li>Develop any module of to be useful in real life application.</li>
+        <li>Multimedia presentation of module developed by students.</li>
+    </ol>
+    <hr>
+    <h3>List of Software/Learning Websites</h3>
+    <ul>
+        <li><a href="https://www.w3schools.com/asp">ASP Tutorial - W3Schools</a></li>
+        <li><a href="https://www.webwiz.co.uk">Classic ASP Tutorials & Articles - Web Wiz</a></li>
+        <li><a href="https://www.w3schools.com/html">HTML Tutorial - W3Schools</a></li>
+        <li><a href="https://www.csstutorial.net">CSS Tutorial</a></li>
+        <li><a href="https://www.tutorialspoint.com/vbscript/index.htm">VBScript Tutorial - Tutorials Point</a></li>
+        <li><a href="https://www.w3schools.com/ADO/default.asp">ADO Tutorial - W3Schools</a></li>
+    </ul>
+    <hr>
+    <dl>
+        <dt><b>HTML</b></dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt><b>XML</b></dt>
+        <dd>eXtensible Markup Language</dd>
+    </dl>
+</body>
+</html>
