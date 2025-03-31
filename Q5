@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Include Image in HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Displaying an Image Using HTML</h1>
+    <p>This is an example of how to include an image in an HTML webpage.</p>
+    <img src="image.jpg" alt="Sample Image" width="500" height="300">
+</body>
+</html>
