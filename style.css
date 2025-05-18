@@ -1,0 +1,205 @@
+/* styles.css */
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #080908;
+    --section-bg: #ffffff;
+    --border-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-behavior: smooth;
+    animation: fadeIn 1s ease-in;
+}
+
+.dark-mode {
+    --background-color: #070202;
+    --text-color: #6123e6;
+    --section-bg: #811919;
+    --border-color: #f4f4f4;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #333;
+    border-radius: 5px;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url('hero-image.jpg') center/cover fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(11, 9, 9);
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 40px;
+    border-radius: 8px;
+    background-color: var(--section-bg);
+    color: var(--text-color);
+    box-shadow: 0px 0px 10px rgba(14, 41, 190, 0.877);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.05);
+}
+
+.section h2 {
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.section p {
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+.section.primary {
+    border-left: 5px solid var(--border-color);
+}
+
+.section.secondary {
+    background-color: #f0f0f0;
+    border-left: 5px solid #1233dc;
+}
+
+article {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+article h2 a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+article h2 a:hover {
+    color: #1da1f2;
+}
+
+article p {
+    color: var(--text-color);
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #0db201;
+    color: white;
+    margin-bottom: 20px;
+    position: down;
+    width: 100%;
+}
+
+.footer .social-icons {
+    margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer .social-icons a:hover {
+    color: #1da1f2;
+}
+
+/* Dark Mode Toggle Button */
+.toggle-dark-mode {
+    position: static;
+    top: 20px;
+    right: 20px;
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.toggle-dark-mode:hover {
+    background: #5107da;
+}

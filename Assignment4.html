@@ -1,0 +1,78 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Assignment</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <h1>JavaScript Assignment</h1>
+
+  <section>
+    <h2>BMI Calculator</h2>
+    <input type="number" id="weight" placeholder="Weight in kg">
+    <input type="number" id="height" placeholder="Height in meters">
+    <button onclick="calculateBMI()">Calculate BMI</button>
+    <p id="bmiResult"></p>
+  </section>
+
+  <section>
+    <h2>Pop-up Demo</h2>
+    <button onclick="submitForm()">Submit Form</button>
+    <button onclick="deleteItem()">Delete Item</button>
+    <button onclick="getName()">Enter Your Name</button>
+    <p id="userName"></p>
+  </section>
+
+  <section>
+    <h2>Dynamic List</h2>
+    <input type="text" id="newItem" placeholder="New item">
+    <button onclick="addItem()">Add Item</button>
+    <ul id="itemList"></ul>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="tel" id="phone" placeholder="Phone" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <div id="validationMsg" class="error"></div>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Random Number and Date</h2>
+    <button onclick="showDateTime()">Show Date & Time</button>
+    <p id="dateTime"></p>
+    <button onclick="generateRandom()">Generate Random Number</button>
+    <p id="randomNumber"></p>
+  </section>
+
+  <section>
+    <h2>Weather (AJAX Example)</h2>
+    <button onclick="fetchWeather()">Fetch Weather (London)</button>
+    <p id="weather"></p>
+  </section>
+
+  <section>
+    <h2>To-Do List</h2>
+    <input type="text" id="task" placeholder="New Task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="tasks"></ul>
+  </section>
+
+  <section>
+    <h2>Chatbot</h2>
+    <input type="text" id="userInput" placeholder="Say something">
+    <button onclick="chat()">Send</button>
+    <p id="botResponse"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

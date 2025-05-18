@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <button class="toggle-dark-mode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    
+    <section class="hero" id="home">
+        <h1>Welcome to My Tech Portfolio</h1>
+        <p>Showcasing my projects and skills in web development.</p>
+    </section>
+    
+    <section class="container" id="about">
+        <div class="section primary">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with expertise in front-end and back-end technologies. I enjoy building responsive and user-friendly websites.</p>
+        </div>
+    </section>
+    
+    <section class="project-section" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <h3 class="project-title">Project One</h3>
+            <p class="project-description">A responsive and interactive tech portfolio showcasing my skills and experience.</p>
+        </div>
+        <div class="project-card">
+            <h3 class="project-title">Project Two</h3>
+            <p class="project-description">A web application that provides real-time data visualization for developers.</p>
+        </div>
+    </section>
+    
+    <section class="container" id="contact">
+        <div class="section secondary">
+            <h2>Contact Me</h2>
+            <p>Email: sumit@example.com</p>
+            <p>LinkedIn: linkedin.com/in/yourprofile</p>
+            <p>GitHub: github.com/SumitKharte</p>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
